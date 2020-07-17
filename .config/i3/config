@@ -172,7 +172,7 @@ colors {
 client.focused         	#d33682	#d33682	#002b36 #d33682		#d33682
 client.focused_inactive	#657b83	#002b36	#657b83	#268bd2		#268bd2
 client.unfocused       	#657b83	#002b36	#657b83	#268bd2		#268bd2
-client.urgent		    #657b83	#002b36	#657b83	#268bd2		#268bd2
+client.urgent		#657b83	#002b36	#657b83	#268bd2		#268bd2
 
 assign [class="^Google-chrome$"] 2
 assign [class="^TelegramDesktop$"] 3
@@ -185,5 +185,4 @@ for_window [class="^URxvt$"] border none
 
 exec google-chrome
 exec telegram
-#exec yubioath
 exec urxvtc
