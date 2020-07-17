@@ -11,4 +11,4 @@ $ config config status.showUntrackedFiles no
     config push
 ```
 
-[Inpired by HN discussion]( https://news.ycombinator.com/item?id=11070797 "original here")
+[Inspired by HN discussion]( https://news.ycombinator.com/item?id=11070797 "original here")
