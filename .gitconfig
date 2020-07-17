@@ -4,3 +4,15 @@
 	signingkey = 1CF8EDB778E1EBC26EFE096ED865B73FADC504C6
 [commit]
 	gpgsign = true
+[core]
+	editor = neovim
+[merge]
+  tool = vimdiff
+[mergetool]
+  prompt = true
+[mergetool "vimdiff"]
+  cmd = neovim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+  prompt = false
+[diff]
+  tool = vimdiff
