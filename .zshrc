@@ -21,3 +21,4 @@ alias kp="cd $PROJECTS/k8s"
 alias gp="cd $PROJECTS/go"
 alias v="nvim"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+bindkey -M viins "jj" vi-cmd-mode
