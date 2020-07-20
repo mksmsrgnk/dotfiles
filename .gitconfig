@@ -5,13 +5,13 @@
 [commit]
 	gpgsign = true
 [core]
-	editor = nvim
+	editor = vim
 [merge]
   tool = vimdiff
 [mergetool]
   prompt = true
 [mergetool "vimdiff"]
-  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+  cmd = vim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
   prompt = false
 [diff]

@@ -19,6 +19,7 @@ alias cls="clear"
 alias top="htop"
 alias kp="cd $PROJECTS/k8s"
 alias gp="cd $PROJECTS/go"
-alias v="nvim"
+alias v="vim"
+alias go="go1.14.6"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 bindkey -M viins "jj" vi-cmd-mode
