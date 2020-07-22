@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -174,7 +174,7 @@ client.focused_inactive	#657b83	#002b36	#657b83	#268bd2		#268bd2
 client.unfocused       	#657b83	#002b36	#657b83	#268bd2		#268bd2
 client.urgent		#657b83	#002b36	#657b83	#268bd2		#268bd2
 
-assign [class="^Google-chrome$"] 2
+assign [class="^Google-chrome$"] 10
 assign [class="^TelegramDesktop$"] 3
 assign [class="^URxvt$"] 1
 
@@ -185,4 +185,4 @@ for_window [class="^URxvt$"] border none
 
 exec google-chrome
 exec telegram
-exec urxvtc
+exec urxvt

@@ -22,4 +22,4 @@ alias gp="cd $PROJECTS/go"
 alias v="vim"
 alias go="go1.14.6"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-bindkey -M viins "jj" vi-cmd-mode
+alias h="/usr/sbin/helm"

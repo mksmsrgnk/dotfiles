@@ -17,7 +17,7 @@ set smartindent
 set nowrap
 set smartcase
 set noswapfile
-set undodir=~/.nvim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 set colorcolumn=80 
@@ -115,14 +115,12 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:UltiSnipsExpandTrigger="<tab>"
 nnoremap <Leader>rg :Rg<Space>
 nnoremap <silent> <Leader>mod :FZFMru<CR>
-nnoremap <silent> <Leader><Space> :Files<CR>
+nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <Leader>buf :Buffers<CR>
-inoremap jj <esc>
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-inoremap <esc> <nop>
 nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :wq<CR>
