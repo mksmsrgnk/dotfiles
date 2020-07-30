@@ -17,10 +17,12 @@ set smartindent
 set nowrap
 set smartcase
 set noswapfile
+set relativenumber
 set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 set colorcolumn=80 
+set noshowmode
 highlight ColorColumn ctermbg=0 guibg=lightgray
 set completeopt-=preview
 set autowrite
@@ -29,8 +31,6 @@ set background=light
 set clipboard=unnamedplus
 set foldmethod=manual 
 
-let mapleader = ","
-let maplocalleader = ","
 colorscheme solarized 
 let g:lightline = {
 	\ 'colorscheme': 'solarized',
@@ -116,14 +116,13 @@ let g:UltiSnipsExpandTrigger="<tab>"
 nnoremap <Leader>rg :Rg<Space>
 nnoremap <silent> <Leader>mod :FZFMru<CR>
 nnoremap <silent> <C-p> :Files<CR>
-nnoremap <silent> <Leader>buf :Buffers<CR>
+nnoremap <silent> <Leader>bu :Buffers<CR>
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <leader>sv :wq<CR>
 
 " ------------------------- Terminal ----------------------------------------
 nnoremap <Leader>tt :tabnew +terminal<CR>
@@ -143,7 +142,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
