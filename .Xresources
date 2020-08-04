@@ -9,7 +9,8 @@ URxvt.resize-font.bigger: C-Up
 URxvt*scrollBar: false
 
 URxvt*font:        xft:JetBrains mono:size=17:style=regular:antialias=true
-URxvt*boldFont:    xft:JetBrains mono:size=17:style=regular:antialias=true
+URxvt*boldFont:    xft:JetBrains mono:size=17:style=bold:antialias=true
+
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
