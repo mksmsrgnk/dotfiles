@@ -126,6 +126,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " ------------------------- Terminal ----------------------------------------
 nnoremap <Leader>tt :tabnew +terminal<CR>
+tnoremap <Esc> <C-\><C-n>
 augroup neovimTerminal
     autocmd!
     autocmd TermOpen * startinsert
