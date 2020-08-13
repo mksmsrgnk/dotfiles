@@ -21,7 +21,6 @@ set undofile
 set incsearch
 set colorcolumn=80 
 set noshowmode
-highlight ColorColumn ctermbg=0 guibg=lightgray
 set completeopt-=preview
 set autowrite
 set number
@@ -30,13 +29,17 @@ set clipboard=unnamedplus
 set foldmethod=manual 
 set cmdheight=1
 set shortmess+=c
-
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+set spell spelllang=ru_yo,en_us
 colorscheme solarized 
 let g:lightline = {
 	\ 'colorscheme': 'solarized',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ],['go'] ]
+	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+	\		['go'] ]
 	\ },
         \ 'component': {
         \   'go': '%#goStatuslineColor#%{LightlineGo()}',
@@ -58,7 +61,7 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 let g:go_fmt_command = 'gopls'
 let g:go_imports_mode = 'gopls'
 let g:go_rename_command = 'gopls'
-let g:go_echo_command_info = 1
+let g:go_echo_command_info = 0
 let g:go_term_enabled = 0
 let g:go_term_close_on_exit = 0
 let g:go_metalinter_command = 'golangci-lint'
@@ -89,7 +92,7 @@ let g:go_metalinter_enabled = [
 let g:go_imports_autosave = 1
 let g:go_fmt_autosave = 1
 let g:go_highlight_functions = 0
-" let g:go_list_type = "quickfix"
+let g:go_list_type = "quickfix"
 let g:go_highlight_function_calls = 0
 let g:go_fmt_options = {
 	\'gofmt': '-s',
@@ -109,8 +112,8 @@ augroup Golang
                 nmap <leader>i <Plug>(go-info)
                 nmap <leader>l <Plug>(go-metalinter)
                 nmap <leader>f <Plug>(go-fmt)
-		map <C-n> :lnext<CR>
-		map <C-m> :lprevious<CR>
+		map <C-n> :cnext<CR>
+		map <C-m> :cprevious<CR>
 		nnoremap <leader>a :cclose<CR>
 augroup END
 autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
@@ -125,7 +128,6 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 
 " ------------------------- Terminal ----------------------------------------
