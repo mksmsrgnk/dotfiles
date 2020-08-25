@@ -173,7 +173,7 @@ client.urgent		#657b83	#002b36	#657b83	#268bd2		#268bd2
 
 assign [class="^Google-chrome$"] 10
 assign [class="^TelegramDesktop$"] 2
-assign [class="^URxvt$"] 1
+assign [class="^URxvt$"] 3
 
 # custom window settings
 for_window [class="^Google-chrome$"] border none

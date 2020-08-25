@@ -1,7 +1,7 @@
 [user]
 	name = mksmsrgnk
 	email = sergienko@gmail.com
-	signingkey = 1CF8EDB778E1EBC26EFE096ED865B73FADC504C6
+	signingkey = 8A794635BCF7637A5FBEDF08FE271913B73B36B4
 [commit]
 	gpgsign = true
 [core]

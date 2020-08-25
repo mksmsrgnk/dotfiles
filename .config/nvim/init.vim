@@ -120,19 +120,19 @@ autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
 " ---------------------------------------------------------------------------
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 let g:UltiSnipsExpandTrigger="<tab>"
-nnoremap <Leader>rg :Rg<Space>
+nnoremap <Leader><Tab> :Rg<CR>
 nnoremap <silent> <Leader>mod :FZFMru<CR>
 nnoremap <silent> <C-p> :Files<CR>
-nnoremap <silent> <Leader>bu :Buffers<CR>
+nnoremap <silent> <Leader><Backspace> :Buffers<CR>
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>` :vsplit $MYVIMRC<CR>
 
 " ------------------------- Terminal ----------------------------------------
 nnoremap <Leader>tt :tabnew +terminal<CR>
-nnoremap <Leader>tv :vsplit +terminal<CR>
+nnoremap <Leader>3 :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 augroup neovimTerminal
     autocmd!
