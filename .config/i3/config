@@ -172,15 +172,12 @@ client.unfocused       	#657b83	#002b36	#657b83	#268bd2		#268bd2
 client.urgent		#657b83	#002b36	#657b83	#268bd2		#268bd2
 
 assign [class="^Google-chrome$"] 10
-assign [class="^TelegramDesktop$"] 2
 assign [class="^URxvt$"] 3
 
 # custom window settings
 for_window [class="^Google-chrome$"] border none
-for_window [class="^TelegramDesktop$"] border none
 for_window [class="^URxvt$"] border none
 
 exec google-chrome
-exec telegram
 exec urxvt
 exec --no-startup-id xsetroot -solid "#fdf6e3"

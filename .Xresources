@@ -4,8 +4,8 @@ Xft.hintstyle: hintslight
 Xft.antialias: true
 Xft.rgba: rgb
 URxvt.perl-ext-common: default,resize-font
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger: C-Up
+URxvt.resize-font.smaller: C-minus
+URxvt.resize-font.bigger: C-equal
 URxvt*scrollBar: false
 
 URxvt*font:        xft:JetBrains mono:size=17:style=regular:antialias=true
