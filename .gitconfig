@@ -4,8 +4,6 @@
 	signingkey = 8A794635BCF7637A5FBEDF08FE271913B73B36B4
 [commit]
 	gpgsign = true
-[core]
-	editor = vim
 [merge]
   tool = vimdiff
 [mergetool]

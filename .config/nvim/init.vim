@@ -143,3 +143,7 @@ function! LightlineGo()
   return exists('*go#statusline#Show') ? go#statusline#Show() : ''
 endfunction
 
+if has('nvim') && executable('nvr')
+	let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
+endif
+
