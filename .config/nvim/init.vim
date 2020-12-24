@@ -6,7 +6,6 @@ Plug 'pbogut/fzf-mru.vim'
 Plug 'SirVer/ultisnips'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 Plug 'itchyny/lightline.vim'
 Plug 'neovim/nvim-lsp'
 call plug#end()
@@ -114,7 +113,7 @@ noremap <Right> <nop>
 nnoremap <leader>` :vsplit $MYVIMRC<CR>
 
 " ------------------------- Terminal ----------------------------------------
-nnoremap <Leader>3 :vsplit +terminal<CR>
+nnoremap <Leader>3 :tabnew +terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 augroup neovimTerminal
     autocmd!
