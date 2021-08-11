@@ -11,8 +11,8 @@ plugins=(
 	zsh-syntax-highlighting
 )
 source $ZSH/oh-my-zsh.sh
-alias mfa="sudo mount -t cifs -o vers=2.0,user=guest,password=,file_mode=0777,dir_mode=0777 //fileserver/archive $HOME/mnt/archive"
-alias ufa="sudo umount $HOME/mnt/archive"
+alias mfa="sudo mount -t fuse.sshfs -o allow_other,default_permissions rpi:/media/pi $HOME/mnt/rpi"
+alias ufa="sudo umount $HOME/mnt/rpi"
 alias mhf="vmhgfs-fuse $HOME/mnt/host -o allow_other"
 alias zshcfg="v $HOME/.zshrc"
 alias cls="clear"
@@ -25,3 +25,10 @@ alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias h="/usr/sbin/helm"
 alias ccp="kubectl config use-context kubernetes-admin@kubernetes"
 alias cct="kubectl config use-context minikube"
+
+# The next line updates PATH for Yandex Cloud CLI.
+if [ -f '/home/mksm/yandex-cloud/path.bash.inc' ]; then source '/home/mksm/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/home/mksm/yandex-cloud/completion.zsh.inc' ]; then source '/home/mksm/yandex-cloud/completion.zsh.inc'; fi
+
