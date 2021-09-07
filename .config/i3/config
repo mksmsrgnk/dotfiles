@@ -155,21 +155,21 @@ bar {
         status_command i3status
 colors {
            # Solarized light
-           separator #657b83
-           background #fdf6e3
-           statusline #073642
-           focused_workspace #fdf6e3 #fdf6e3 #268bd2
-           active_workspace #002b36 #fdf6e3 #002b36
+           separator					#657b83
+           background					#fdf6e3
+           statusline					#073642
+           focused_workspace	#fdf6e3 #fdf6e3 #268bd2
+           active_workspace		#002b36 #fdf6e3 #002b36
            inactive_workspace #fdf6e3 #fdf6e3 #073642
-           urgent_workspace #f2777a #f2777a #ffffff
+           urgent_workspace		#f2777a #f2777a #ffffff
         }
 }
 
 # Solarized light
-client.focused         	#d33682	#d33682	#002b36 #d33682		#d33682
-client.focused_inactive	#657b83	#002b36	#657b83	#268bd2		#268bd2
-client.unfocused       	#657b83	#002b36	#657b83	#268bd2		#268bd2
-client.urgent			#657b83	#002b36	#657b83	#268bd2		#268bd2
+client.focused         	#d33682	#d33682	#002b36 #d33682	#d33682
+client.focused_inactive	#657b83	#002b36	#657b83	#268bd2	#268bd2
+client.unfocused       	#657b83	#002b36	#657b83	#268bd2	#268bd2
+client.urgent						#657b83	#002b36	#657b83	#268bd2	#268bd2
 
 assign [class="^Google-chrome$"] 10
 assign [class="^URxvt$"] 3
